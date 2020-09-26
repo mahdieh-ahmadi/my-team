@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    padding: 3rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.sticky{
+    padding: 1rem 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo{
+    color: #fff;
+}
+
+.sticky .logo{
+    color: #000;
+}
+
+header .list{
+    display: flex;
+}
+
+header .list .list_item{
+    list-style: none;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+header .list .list_item a{
+ text-decoration: none;
+ color: #fff;
+ cursor: pointer;
+}
+
+.sticky .list .list_item a{
+    color: #000;
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.85)), url(/image/img26.jfif) ;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home h1{
+    width: 63%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6.5rem;
+    text-transform: uppercase;
+}
+
+.home h1 span{
+    color: rgb(124, 0, 182);
+}
+
+.sec{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 3rem;
+    margin: 0 auto;
+}
+
+.about{
+    margin: 100vh auto 0 auto;
+}
+
+.sec h2{
+    color: #000;
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.sec p{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.sec a{
+    margin-top: 2rem;
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.services_item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-gap: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.services_item h4{
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.services_item--img{
+    box-shadow: 0 2px 3px #ccc;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+}
+
+.services_item img{
+    margin-bottom: 1rem;
+    width:20%;
+}
+
+.achinement{
+    width: 100%;
+    margin-top: -250px;
+    padding-top: 250px;
+    background-color: #000;
+    color: white;
+    z-index: 10;
+}
+
+.achinement p{
+    width: 75%;
+}
+
+.achinement h2{
+    color: #fff;
+}
+
+.cards{
+    width: 80%;
+    text-align: center;
+    padding: 7rem 3rem;
+    margin: 0 auto;
+}
+
+.cards h2{
+    margin-bottom: 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.cards p {
+    margin-bottom: 3rem;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-gap: 2rem;
+}
+
+.items h5{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(124, 0, 182);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.items a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.item{
+    width: 100%;
+    position: relative;
+}
+
+.item .item_detail{
+    background-color: #000000;
+    color: #fff;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .item_detail h6{
+    font-size:1.5rem ;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.team .item:hover  img{
+    opacity: 0;
+}
+
+.cantact{
+    background-color: #000;
+    width: 100%;
+    padding: 3rem 3rem;
+}
+
+.cantact h2{
+    color: #fff;
+    font-weight: 100;
+}
+
+.cantact p{
+    color: #fff;
+}
+
+.cantact form{
+    width: 70%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.cantact form input:nth-of-type(1),
+.cantact form input:nth-of-type(2){
+    width: 46%;
+    display: inline-block;
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.cantact form input:last-of-type{
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.cantact form input:nth-of-type(1){
+    margin-right: 3rem;
+}
+
+.cantact form textarea{
+   width: 100%;
+   margin-top: 2rem;
+   padding: 1rem 1.5rem;
+   background-color: transparent;
+   color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
